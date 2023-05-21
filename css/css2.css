@@ -1,0 +1,52 @@
+
+
+body {
+	
+	background-color: rgb(0, 11, 0);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -moz-user-focus: ignore;
+}
+    
+#corpo {
+	position: absolute;
+	left: 11%;
+	top: 11%;
+	z-index: 1
+}
+
+.trans {	
+font-size: 0.8em;
+	background-color: rgba(5, 5, 5, 0.3);
+	color: white;
+	border: 1px solid gray;
+   border-radius: 1.2em 0.6em;
+   padding: 0.2em 2em;
+}
+/* Diminui tamanho fonte do input (relogios de duração) quando a tela está pequena*/
+@media only screen and (max-width: 600px) {
+  .trans {
+    	font-size: 0.6em;
+  }
+}
+
+
+video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  min-width: 75%;
+  max-width: 100%;
+  max-height: 100%;
+  -moz-user-select: none;
+  -moz-user-focus: normal;
+}
+
+
+
+
