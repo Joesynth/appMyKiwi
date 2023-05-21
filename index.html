@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--codificação caractere da página-->
+	<meta charset="utf-8">
+ 	<link rel="icon" href="596.png">
+	<!--SEO geral-->
+	<title> # </title>
+	<meta name="description" content="#">
+ 	<link rel="canonical" href="http://www.#.com"> 
+	<meta name="author" content="joe" >
+	<meta name="robots" content="index">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/js.js"> </script>
+	<link rel="stylesheet" href="css/css2.css">
+</head>
+<body>
+	
+		<video autoplay >
+			<source src="" type="video/webm"> <!-- avi>ogg&webm convertido pelo FFmpeg toca no Firefox-->
+		</video>
+<button onclick="Tocar()" >Play</button>
+
+
+<script>
+
+		var a = ["b.webm","f.webm","i.webm",];
+		var i = Math.floor(Math.random() * (a.length));  /*	índice - random */
+
+function addEventos () {
+
+			 document.querySelector('video').src = a[i];  // seleciona tag video; inseri no src o arquivo do array "a" conforme sorteio de "i".
+
+			/* estre trecho de código NÃO faz tocar, e sim o setTimeout o fará*/
+				function Tocar () {
+					var vidd = document.querySelector("video");
+				   vidd.play();	
+				   rnd();		
+				}
+	      // refresh ao terminar o vd
+			var vidDD = document.querySelector("video");
+			vidDD.onended = function () {
+	 			location.reload();		
+			}
+
+/*			var vidDD = document.querySelector("video");
+			function playAudio() {
+  				vidDD.play();
+			} 
+*/
+}
+window.addEventListener("load", addEventos)
+
+</script>
+
+</body>
+</html>
